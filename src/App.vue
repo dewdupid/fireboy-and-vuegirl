@@ -24,10 +24,9 @@ const inputEl = ref(null)
 const user = ref(null)          // the real Firebase user, or null
 const authReady = ref(false)    // false until Firebase knows whether you're signed
 
-let stopListening = null
-
 let stopAuth = null
 let stopTodos = null
+let stopListening = null
 // don't forget!!!
 
 onMounted(() => {
